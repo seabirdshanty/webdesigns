@@ -1,0 +1,151 @@
+* {
+	color: #3c281f;
+}
+
+body {
+  background-color: #e9d2c0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.navbar {
+	background: #7a5f68;
+	z-index:2;
+	padding:0 25px;
+	box-shadow:0 2px 5px rgba(0,0,0,0.2);
+	border-radius:0;
+	margin-bottom:0;
+	box-shadow: none !important;
+}
+
+.navbar-header {
+	margin-right: 0 !important;
+}
+
+.navbar-toggle .icon-bar {
+	background: #7a5f68;
+}
+
+.navbar-brand {
+	padding:17px 15px;
+}
+
+.navbar-nav > li > a {
+	padding: 25px;
+}
+
+#wrapper {
+  /* width: 95%; */
+  margin: 0 auto;
+  background: #fff;
+}
+
+#wrapper .masthead {
+  width: 100% !important;
+  height: 20em;
+  background:  #7a5f68 url('masthead2.jpg') center;
+  background-size: cover;
+  overflow: hidden;
+  border-top: double 3px #7a5f68;
+  border-bottom: double 3px #fff;
+}
+
+.masthead .container-fluid {
+  margin-top: -11em;
+  text-align: center;
+  background-color: rgba(255,255,255,0.5);
+  padding: 25px 0px;
+}
+
+#wrapper #content {
+  width: 85% !important;
+  margin: 0 auto;
+}
+
+
+#content.page-content {
+	padding: 35px 0;
+}
+
+#content.page-content h1,
+#content.page-content h2,
+#content.page-content h3,
+#content.page-content h4,
+#content.page-content h5,
+#content.page-content h6,
+#content.page-content h7 {
+	color: grey;
+}
+
+.sidebar{
+	border-right: 1px solid lightgrey;
+	margin-bottom: 100px;
+}
+
+.sidebar .avatar {
+	text-align: center;
+	border-radius: 1em 2em;
+	max-width: 150px;
+	margin: 0 auto 50px;
+	border: 2px solid #eedacf;
+}
+
+.sidebar ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.sidebar ul li{
+	background: #7a5f68;
+	color: white;
+	text-align: center;
+	margin: 5px 0;
+}
+
+.sidebar ul li a {
+	color: white;
+	height: 50px;
+	line-height: 50px;
+	padding: 0 5px;
+}
+
+.sidebar ul li a:hover {
+	/* background: white;
+	color: #7a5f68;
+	height: 50px;
+	line-height: 50px;
+	padding: 0 5px; */
+}
+
+#footer {
+  background:  #7a5f68;
+  color: #e9d2c0 !important;
+  border-top: double 3px #7a5f68 !important;
+  margin: 0;
+  padding: 0;
+}
+
+#footer a, #footer a:active, #footer a:hover, #footer a:visited{
+	color:white;
+}
+
+#footer .container {
+  padding: 25px;
+  text-align: center;
+}
+
+.btn.btn-primary {
+	background: #7a5f68;
+	border: 1px solid #7a5f68;
+	color: #eedacf;
+}
+
+.btn.btn-default {
+	color: #7a5f68;
+	border: 1px solid #7a5f68;
+}
+
+a, a:hover, a:active, a:visited {
+	color: #ae747c;
+}
