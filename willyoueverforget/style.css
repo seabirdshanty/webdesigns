@@ -1,0 +1,196 @@
+
+	@font-face {
+    font-family: 'Dawning of a New Day';
+    src: local('Dawning of a New Day'), local('DawningofaNewDay'), url('doand.ttf') format('ttf');
+    font-style: normal;
+	}
+    
+    @media (min-width: 1px) and (max-width: 400px) {
+    
+    h3 { display: none; }
+    
+    }
+   
+@media (min-width: 1px) and (max-width: 600px) {
+   
+   #sideline {
+   display: none;
+    }
+    
+    .home {
+    width: 100%;
+    max-width: 500px;
+     }
+
+     	nav a {
+	background-color: pink;
+	color: white;
+	padding: 10px;
+	border-radius: 5px;
+	margin: 5px;
+    }
+    
+    	blockquote {
+	border: 1px dotted pink;
+	display: block;
+	background-color: #fff2f4;
+	font-style: italic;
+	padding: 5px;
+	}
+     
+            blockquote .ava {
+	margin-left: 0px;
+	}
+     
+   }
+   
+@media (min-width: 601px) and (max-width: 9999px) {
+   
+   	nav a {
+	background-color: pink;
+	color: white;
+	padding: 10px;
+	border-radius: 5px;
+	margin: 10px;
+	webkit-transition: background-color 0.5s, color 0.5s;
+    transition: background-color 0.5s, color 0.5s;
+	}
+
+    
+     blockquote {
+	border: 1px dotted pink;
+	border-left: 5px solid pink !important;
+	display: block;
+	background-color: #fff2f4;
+	font-style: italic;
+	padding: 5px;
+	}
+    
+      .ava {
+	margin-left: 150px !important;
+	}
+   
+   
+}
+   
+   
+    body {
+      color:#C0C0C0;
+      background-color:#FFFFFF;
+	  font-family: Verdana, sans-serif;
+	  font-size: 12px;
+	  }
+	  
+    a, a:hover, a:active { 
+	color: pink; 
+	text-decoration: none;
+	}
+	
+	 a:visited {
+	 text-decoration: line-through;
+	 }
+ 
+     h1, h2, h3 { font-weight: normal; }
+ 
+	h1 { 
+	font-family: 'Dawning of a New Day', cursive;
+	font-size: 4em;
+	 }
+     
+     h2 {
+     text-align: right;
+     border-bottom: 2px dashed pink;
+     font-size: 14px;
+      }
+      
+     h3 {
+     color: #eaeaea;
+     margin-top: -27px;
+     font-size: 9px;
+     font-style: italic;
+     margin-left:20px;
+      }
+     
+    .title {
+    margin-top: -40px;
+    letter-spacing: 2px;
+    color: pink;
+     }
+     
+     
+     
+	
+	#BIGBABY {
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	position: absolute; top: 0; bottom: 0; left: 0; right: 0;
+	border: 0px;
+	border-collapse:collapse;
+	}
+	
+	#sideline {
+	 width: 20%;
+	 background-image:url('img/bg.gif');
+     background-repeat:repeat;
+	 background-attachment: fixed;
+	 margin: 0px;
+	 padding: 0px;
+	 
+	}
+	
+	#container {
+	width: 60%;
+	background-color: white;
+	padding: 20px;
+	border-left: 5px solid pink;
+	border-right: 5px solid pink;
+	
+	}
+	
+	#header {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+    margin-top: -30px;
+	}
+	
+	.spacer {
+	height: 25px;
+	}
+	
+	nav a:visited {
+    color: white;
+    text-decoration: none;
+	}
+    
+	nav a:hover {
+		background-color: white;
+		color: pink !important;
+	}
+	
+	#content{
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	
+	 }
+	
+	
+	hr {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	border: 0px white;
+	background-image: url('img/banner.gif');
+	background-position: center;
+	background-repeat:no-repeat;
+	height: 30px;
+	margin-top: 30px;
+	}
+	
+	.ava_l { float: left; margin: 10px; padding: 2px; border: 5px solid pink;}
+	.ava_r { float: right; margin: 10px; padding: 2px; border: 5px solid pink;}
+
