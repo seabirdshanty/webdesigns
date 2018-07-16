@@ -1,0 +1,281 @@
+/* 
+ _    _             _                          _    _   __         _                         _      _ 
+| |  | |           | |                        | |  (_) / _|       | |                       | |    | |
+| |_ | |__    ___  | |__    ___   __ _  _   _ | |_  _ | |_  _   _ | | __      __ ___   _ __ | |  __| |
+| __|| '_ \  / _ \ | '_ \  / _ \ / _` || | | || __|| ||  _|| | | || | \ \ /\ / // _ \ | '__|| | / _` |
+| |_ | | | ||  __/ | |_) ||  __/| (_| || |_| || |_ | || |  | |_| || |  \ V  V /| (_) || |   | || (_| |
+ \__||_| |_| \___| |_.__/  \___| \__,_| \__,_| \__||_||_|   \__,_||_|   \_/\_/  \___/ |_|   |_| \__,_|
+			(c) muffy, 2016
+				a kino's journey layout
+			
+	Made to suit not only blog content, but otcg trading posts as well.
+	Take any code you want!
+	
+	Contents:
+			
+		1. MAIN FORMATTING
+		2. MAIN CONTENT
+		3. SIDEBAR
+		4. SIDE NAVIGATION
+		5. OTCG MENU
+		6. FORMS
+		7. HEADERS
+		
+*/
+
+/*
+======================
+MAIN FORMATING
+======================
+*/
+
+body {
+font-family: 'Slabo 27px', serif;
+margin: 0px;
+padding: 0px;
+font-size: 0.8em;
+color: #35392c;
+background-color:  #4d574a;
+
+}
+
+/* Make Certain tables Mold to screen */
+
+#mold table { 
+width: 95%;
+margin-left: auto;
+margin-right: auto;
+padding-bottom: 20px;
+}
+
+#mold td, #mold tr {
+display: inline;
+}
+
+
+
+/*
+======================
+MAIN CONTENT
+======================
+*/
+
+a, 
+a:active, 
+a:visited,
+a:hover {
+     color: #55442c;
+}
+
+.ava_l { 
+	float: left; 
+	margin: 10px; 
+	padding: 2px;
+	border: 5px double #c2c2b6;
+	}
+	
+.ava_r { 
+	float: right; 
+	margin: 10px; 
+	padding: 2px; 
+	border: 5px double #c2c2b6;
+	}
+
+#content {
+	background-color: white;
+	margin: 0px 5px 5px 5px;
+	max-width: 800px;
+	padding: 10px;
+}
+
+img { padding: 0px; margin: 0px; }
+
+hr {
+	border: 1px solid #c2c2b6; 
+	width: 300px;
+	}
+	
+
+.spacer1 { 
+	height: 50px; 
+	}
+
+#wrapper {
+	margin: 0px 0px 0px 320px;
+	}
+
+/*
+======================
+SIDEBAR
+======================
+*/
+
+#kino {
+position: fixed;
+background: cyan;
+background: #556653  url("kino-side.png");
+background-position: center top;
+background-repeat: no-repeat;
+background-size: cover;
+width: 300px;
+height: 100%;
+border-right: 5px solid #556653;
+}
+
+
+/*
+======================
+SIDE NAVIGATION
+======================
+*/
+
+#nav {
+width: 100%;
+position: absolute;
+bottom: 20%;
+/* background: #556653; */
+color: #a6a9a1;
+
+}
+
+#nav a, 
+#nav a:active, 
+#nav a:visited { 
+  transition: color 0.2s ease;
+  color: #e1d5a8; 
+  text-decoration: none; }
+#nav a:hover { 
+color: #83908d; 
+text-decoration: none; }
+
+#nav .sidenav {
+margin-left: 0px;
+padding-left: 0px;
+}
+
+#nav .sidenav li {
+width: 100%;
+transition: background 0.2s ease;
+display: block;
+background: #556653;
+width: 98%;
+margin-bottom: 2px;
+padding: 5px 10px 5px 0px;
+text-align: right;
+}
+
+#nav .sidenav li:hover {
+background: #e1d5a8;
+}
+
+
+
+/*
+======================
+OTCG MENU
+======================
+*/
+
+.trader{ 
+float: left;
+max-width: 800px;
+margin: 0px 0px 30px 0px;
+
+}
+
+.trader a, 
+.trader a:active, 
+.trader a:visited { 
+  transition: color 0.2s ease;
+  color: #c2c2b6; 
+  text-decoration: none; }
+.trader a:hover { 
+color: white; 
+text-decoration: none; }
+
+.trader li { 
+display: inline;
+padding: 15px;
+margin: 0px 15px 10px 15px;
+background: grey;
+border-radius: 0px 0px 5px 5px;
+background: #7c9677;
+}
+
+.trader li:first-child {
+	margin-left: 0px;
+}
+
+
+
+/*
+======================
+FORMS
+======================
+*/
+
+input, button , select, textarea { 
+        border: 1px double #55442c;
+        background-color: #55442c;
+        color: #e4e3de;
+		       padding: 15px;
+       margin: 10px;
+       border-radius: 5px;
+}
+
+img, br, p { padding: 0px; margin-bottom: 10px; }
+
+input, button , select { 
+    height: 4em;
+    }
+      
+textarea {
+	width: 80%;
+	}
+     
+
+
+/*
+======================
+HEADERS
+======================
+*/
+
+h1 { 
+	font-family: 'La Belle Aurore', cursive;
+	font-size: 4em;
+	text-align:center;
+	margin-left:auto;
+	margin-right: auto;
+	margin-bottom: -10px;
+	margin-top: -10px;
+	 }
+	 
+h2, h3, h4 {	
+	/* font-family: 'La Belle Aurore', cursive; */
+     border-bottom: 1px double #5f7259;
+	 color: #747445;
+	 font-weight: normal;
+	 margin:0px;
+	 padding:0px;
+	 text-transform: uppercase;
+	 
+      }
+h5 {
+	font-family: 'La Belle Aurore', cursive;
+	font-size: 0.7em;
+	margin: 0px 0px -40px 70px;
+	text-align:left;
+	color: #c0bb77;
+	font-weight: normal;
+	}
+	
+h6 { 
+	text-transform: uppercase;
+	font-weight: normal; 
+	text-align: center; 
+	margin:0px; 
+	padding: 0px;
+	}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { text-decoration: none; }	
