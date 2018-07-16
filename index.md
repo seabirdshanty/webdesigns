@@ -1,5 +1,3 @@
-# Web Designs I've made.
-
 <ul>
   <li><a href="bubbly">bubbly</a> (2018)
   <li><a href="kinotabi">kinotabi</a> (2018)
