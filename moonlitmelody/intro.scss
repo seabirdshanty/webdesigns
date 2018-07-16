@@ -1,0 +1,485 @@
+$color_1: #FFC0CB;
+$color_2: #FFD2E8;
+$color_3: #ccc;
+$color_4: #fff;
+$color_5: #666;
+
+$submenu_bal: 17%;
+$article_bal: 81%;
+
+$font_h2: 'Dancing Script', cursive;
+$font_t: 'Ledger', serif;
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+
+@mixin font-source-sans($size: false, $colour: false, $weight: false,  $lh: false) {
+    @if $size { font-size: $size; }
+    @if $colour { color: $colour; }
+    @if $weight { font-weight: $weight; }
+    @if $lh { line-height: $lh; }
+}
+
+@mixin breakpoint($point) {
+  @if $point == phone {
+    @media  screen and (max-width: 720px) { @content; }
+  }
+  @if $point == tablet {
+    @media screen and (min-width: 721px) and (max-width: 1020px) { @content; }
+  }
+  @if $point == smallc {
+    @media screen and (min-width: 1021px) and (max-width: 1440px) { @content; }
+  }
+  @if $point == largec {
+    @media screen and (min-width: 1441px) { @content; }
+  }
+}
+
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+@import url('https://fonts.googleapis.com/css?family=Ledger');
+
+* {
+	font-family: $font_t;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	background: $color_4 url('./img/bg1.png');
+	color: $color_5;
+}
+
+#wrapper {
+
+	@include breakpoint(smallc) {
+		max-width: 80%;
+	}
+	@include breakpoint(largec) {
+		max-width: 1140px;
+	}
+
+	margin: 0 auto;
+	background: white url('./img/cosmos.jpeg') no-repeat bottom left;
+	border-left: 10px double $color_1;
+	border-right: 10px double $color_1;
+
+}
+
+h1, h2 {
+	font-family: $font_h2;
+	margin: 0; padding: 0;
+	font-weight: none;
+	color: $color_5;
+}
+
+
+
+header {
+	background: $color_2 url("./img/head1.jpg") no-repeat center; 
+	background-size: cover;
+	height: 30%;
+
+	@include breakpoint(phone) {
+			height: 15% !important;
+	}
+
+		@include breakpoint(tablet) {
+			height: 15% !important;
+	}
+
+	padding: 10px;
+	margin: 0 auto;
+	border-bottom: 5px solid $color_1;
+	border-radius: 0px 0px 60px 60px;
+	
+	#trucat {
+		position: relative;
+		margin-top: 15%;
+		margin-left: 2em; 
+
+		@include breakpoint(tablet) {
+			margin-top: 7% !important;
+		}
+
+		h1 {
+			font-family: $font_h2;
+			font-size: 3em;
+			color: $color_1;
+			font-weight: bolder;
+			text-shadow: 0 0 0.3em $color_4, 0 0 0.3em $color_4, 0 0 0.3em $color_4;
+		}
+		
+		h4 {
+			margin: 0; padding: 0;
+			font-weight: none;
+			font-style: italic;
+			margin-left: 80px;
+			font-size: 12px;
+			margin-top: -10px;
+		}
+
+		nav {
+
+			@include breakpoint(phone) {
+				display: none;
+			}
+
+			@include breakpoint(tablet) {
+				display: none;
+			}
+
+			ul {
+				float: right;
+				list-style: none;
+				margin: 0px;
+				margin-right: 40px;
+				margin-top: -30px;
+			}
+
+			li {
+				display: inline;
+				font-size: 0.9em;
+
+				a {
+					background: $color_4;
+					border: 5px solid $color_4;
+					padding: 5px 7px;
+					color: $color_1;
+					text-decoration: none;
+					text-transform: lowercase;
+					@include border-radius(5px 0);
+				}
+			}
+		}
+	}
+}
+
+#container {
+	font-size: 14px;
+	padding: 0 10px;
+	overflow-y: hidden;
+
+	nav { 
+
+		@include breakpoint(phone) {
+			display: none !important;
+		}
+
+		z-index: 10;
+		width: 58%;
+		max-width: 980px;
+		background-color: $color_4;
+		font-size: 16px;
+		padding: 5px;
+		margin: 0 auto;
+		margin-bottom: 20px;
+		border-bottom: 10px solid $color_2;
+	}
+
+	.space {
+		height: 30px;
+		width: 100%;
+	}
+
+	aside { 
+
+		@include breakpoint(phone) {
+				display: none;
+		}
+
+		@include breakpoint(tablet) {
+				width: 20%;
+		}
+
+		position: static;
+		margin: 0;
+		float: left;
+		width: $submenu_bal;
+		
+		.moon {
+			background: 
+				url(./img/cheer.gif) no-repeat bottom left,
+				$color_4 url(./img/pat2.png);
+		}
+
+		.venus {
+			background: 
+				url(./img/ven2.gif) no-repeat bottom left,
+				$color_4 url(./img/pat2.png);
+		}
+
+		section {
+			margin: 0px 5px;
+			margin-bottom: 10px;
+			padding: 2px;
+			background: $color_4 url(./img/pat2.png);
+			@include border-radius(50px 0);
+			overflow: hidden;
+
+			&:first-child {
+				margin-top: 20px;
+			}
+			
+			h2 {
+				text-align: center;
+				margin-top: 15px;
+			}
+
+			ul {
+				list-style: none;
+				padding: 0;
+			}
+
+			li {
+				text-align: right;
+				padding: 10px;
+				border-bottom: 2px dashed $color_5;
+				background: rgba(255,255,255,.5);
+				width: 90%;
+				transition: background .5s, letter-spacing .5s;
+				
+				&:hover{
+					background: rgba(200,200,200,.5);
+					letter-spacing: 5px;
+				}
+
+				a {
+					color: $color_5;
+					text-decoration: none;
+					text-transform: lowercase;
+					
+				}
+			}
+		}
+		
+	}
+
+	#maxi { 
+		margin: 20px 0px;
+		overflow: hidden;
+		padding-left: 20px;
+
+
+
+		article { 
+			border: 3px double $color_3;
+			margin: 20px 0px;
+			background: rgba(255,255,255,.5)  no-repeat bottom left;
+			@include border-radius(25px 0);
+			overflow: hidden;
+		}
+
+		
+		@include breakpoint(phone) {
+			width: 100% !important;
+			padding: 0;
+		}
+
+		a {
+			text-decoration: none;
+			transition: letter-spacing .5s;
+			color: $color_1;
+				&:hover{
+					letter-spacing: 2px;
+				}
+		}
+
+		#author {
+			float: right;
+			padding: 5px;
+			border-bottom:5px solid $color_1;
+			padding-left: 5px;
+			margin-left: 10px;
+			background: $color_4 url('./img/pat1.png');
+			display: block;
+
+			@include breakpoint(phone) {
+				display: none !important;
+			}
+		}
+
+			.mast {
+
+				width: 100% !important;
+				min-height: 0px;
+				max-height: 100px;
+				margin-bottom: 30px;
+
+
+				h1 {
+					padding: 0; margin: 0;
+					max-width: 100%;
+					padding: 2% 0px;
+					margin-top: 15px;
+					margin-left: 5%;
+					float: left;
+				}
+
+				#achiv {
+						display: none;
+				}
+		
+			}
+
+			.side {
+
+				width: 165px;
+				height: inherit; 
+				min-height: 320px;
+				border-left: 5px double $color_1;
+
+				h2 {
+					text-align: center;
+					padding: 5px 0px;
+					margin-top: 15px;
+				}
+
+
+				#achiv {
+					margin: 0; padding: 0;
+					list-style: none;
+					padding-left: 5px;
+					li {
+						font-size: 12px;
+
+						.qt {
+							font-style: italic;
+						}
+					}
+				}
+			}
+
+
+		.side img.avi {
+			display: block;
+			margin: 0 auto;
+			max-width: 128px;
+			background: $color_4;
+			border: 3px double $color_3;
+			@include border-radius(10px 0);
+			padding: 10px;
+		}
+
+		.mast img.avi {
+			display: block;
+			margin: 0 auto;
+			max-width: 128px;
+			background: $color_4;
+			border: 3px double $color_3;
+			@include border-radius(10px 0);
+			padding: 10px;
+
+			float: right;
+			margin-right: 3%;
+		}
+
+		img.feature {
+			display: block;
+			margin: 0 auto;
+			max-width: 80%;
+			background: $color_4;
+			border: 3px double $color_3;
+			@include border-radius(10px 0);
+			padding: 10px;
+		}
+
+		.caption { 
+
+			@include breakpoint(smallc) {
+				max-width: 80% !important;
+			}
+
+			@include breakpoint(largec) {
+				max-width: 80% !important;
+			}
+
+			margin: 10px auto;
+			background: $color_3;
+			padding: 10px 3px;
+			text-align: center;
+			font-style: italic; 
+			@include border-radius(50px 0);
+
+		}
+
+		#content { 
+			//min-height: 250px;
+			padding: 0 30px;
+			overflow-y: auto;
+			
+			&:first-child{
+				margin-top: 0px !important;
+			}
+		}
+
+		.scroll {
+			max-height: 290px;
+		}
+
+
+		p {
+			padding: 5px 3px;
+		}
+
+		h1 {
+			padding: 10px 3px;
+			padding-left: 15px;
+			font-size: 2em; 
+		}
+
+		#fodder {
+			width: 100%;
+			background: $color_3;
+			border-top: 5px solid $color_2;
+			padding-bottom: 10px;
+			height: 50px;
+			margin: 0 auto;
+			position: relative;
+			z-index: 2;
+
+
+				.date {
+					float: left;
+					text-align: left;
+					left: 20px;
+				}
+
+				.comments {
+					float: right;
+					text-align: right;
+					right: 20px;
+				}
+
+				a {
+					text-decoration: none;
+					transition: background .5s, letter-spacing .5s;
+					color: $color_4;
+						&:hover{
+							color: $color_5;
+							text-decoration: line-through;
+							letter-spacing: 2px;
+						}
+				}
+
+		}
+			
+		input, button {
+			background: $color_2 url("./img/pat1.png");
+			padding: 10px 20px;
+			@include border-radius(10px 0);
+			border: 1px double $color_1;
+		}
+	}
+}
+	
+footer {
+	height: 50px;
+	background: $color_1;
+	margin: 0 auto;
+	text-align: center;
+}
